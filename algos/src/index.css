@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Ramabhadra;
+  src: url('./assets//fonts/Ramabhadra.ttf');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ramabhadra';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
