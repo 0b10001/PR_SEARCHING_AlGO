@@ -1,7 +1,7 @@
-# PR_SEARCHING_AlGO
+# PR_SEARCH_ALGORITHM
 
-## Area of focus is on SEARCH ALGORITHMS PRACTICE QUESTIONS
+**Area of Focus:** Search Algorithms Practice Questions
 
-## The idea is to integrate the software with moodle with LTI2
+**Objective:** Integrate the software with Moodle using LTI2.
 
-## So it can be intergrated with the moodle marker? Why? Why what?
+**Why integrate with the Moodle marker?**
