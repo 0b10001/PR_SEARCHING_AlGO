@@ -5,9 +5,9 @@ body {
     padding: 0;
 }
 
-.container {
-    text-align: center;
-    margin-top: 20px;
+.container{
+    padding: 150px;
+    position: relative;
 }
 
 .topic{
@@ -54,7 +54,7 @@ body {
     font-size: 30px;
     border-radius: 20px; /* Adjust the border-radius to control the roundness */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    top:93%;
+    top:91%;
     left:93%
 }
 #answer{
@@ -72,7 +72,7 @@ body {
     font-size: 25px;
     border: 1px solid rgb(8, 7, 8);
     border-radius: 10px;
-    top:90%;
+    top:95%;
     left:0%  
 }
 #result{
@@ -80,7 +80,7 @@ body {
     padding: 10px;
     font-size: 50px;
     color: red;
-    top:85%;
+    top:80%;
     left:10%  
 }
 button:hover {
