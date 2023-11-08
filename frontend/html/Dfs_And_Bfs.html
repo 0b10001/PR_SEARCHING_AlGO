@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Dfs_And_Bfs_Styles.css">
+
+<body onload="generateNewGraph()">
+
+  <div id = "container">
+    <p class="nodesPrompt">Nodes Number:</p>
+    <input class="numNodes" type="number" placeholder="Number of Nodes" style="height: 42px" value="18" >
+    <p>Select Algorithm:</p>
+    <button class="search-button-dfs" id="dfs-button"  onclick="searchDFS()" style="height: 45px; width: 100px">DFS</button>
+    <button class="search-button-bfs" id="bfs-button"  onclick="searchBFS()" style="height: 45px; width: 100px">BFS</button>
+    
+  </div>
+
+  
+
+    <input class="input-box" id="outputid" type="text" placeholder="Output" style="height: 40px" >
+    <button class="mark" id="markbutton" onclick="markInput()" style="height: 45px" style="width: 200px">Mark Input</button>
+    <span id="correctness-message" class="correctness-message" style="margin-left: 10px;"></span>
+    <button class="next" style="height: 45px" onclick="generateNewGraph()">New Graph</button>
+
+    
+
+    <div id="dfs-buttons">
+      <input type="text" id="nodeInput" placeholder="Enter a number">
+      <button onclick="pushNode()">Push</button>
+      <button onclick="popNode()">Pop</button>
+      <button onclick="uncolorNode()">Uncolor</button>
+    </div>
+
+    <div id="bfs-buttons">
+      <input type="text" id="queue-Input" placeholder="Enter a number">
+      <button onclick="enqueueNode()">Enqueue</button>
+      <button onclick="dequeueNode()">Dequeue</button>
+      <button onclick="queueuncolorNode()">Uncolor</button>
+      
+
+  </div>
+
+
+    <div class="stack-container" id="stack-container"></div> 
+    <div id="queue-container" class="queue-container"></div>
+  
+      
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="Dfs_And_Bfs_Script.js"></script> 
+</body>
+<html>
