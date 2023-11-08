@@ -1,0 +1,237 @@
+html {
+    margin: 0;
+    }
+    body{
+      margin:0;
+      padding: 0;
+    }
+    
+    .node{
+      fill:rgb(69, 199, 211);
+      stroke:#fff;
+      stroke-width: 2px;
+    }
+  
+    .link{
+      stroke:#777;
+      stroke-width: 2px;
+    }
+  
+    .font {
+    font: 10px;
+    color: black;
+    font-family: sans-serif;
+    }
+    
+    .next {
+      position: absolute;
+      bottom: 3px; /* Adjust as needed to control the vertical position */
+      left: 95%; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+      width: 98px;
+      border-radius: 10%;
+    }
+  
+    .input-box {
+      position: absolute;
+      bottom: 3px; /* Adjust as needed to control the vertical position */
+      left: 8%; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+      width: 198px;
+      margin-left: 50px;
+      display: none;   
+      
+    }
+  
+    .mark {
+      position: absolute;
+      bottom: 3px; /* Adjust as needed to control the vertical position */
+      left: 22%; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
+      display: none;   
+    }
+    #container {
+        padding: 5px;
+        background: rgb(249, 249, 249);;
+        text-align: left; /* this overrides the text-align: center on the body element. */
+        border-bottom: 1px solid #011215; 
+        
+      }
+  
+    .numNodes{
+         
+        position: fixed;
+        top: 9px; /* Adjust as needed to control the vertical position */
+        left: 620px; /* Center horizontally */
+        width: 170px;
+        border-radius: 8%;
+        transform: translateX(-50%); 
+      }
+
+    .nodesPrompt{
+      position: fixed;
+      top: 10px; /* Adjust as needed to control the vertical position */
+      left: 500px; /* Center horizontally */
+      width: 170px;
+      border-radius: 3%;
+      transform: translateX(-50%);
+    }
+    
+    .search-button-bfs{
+        position: fixed;
+        top: 10px; /* Adjust as needed to control the vertical position */
+        left: 200px; /* Center horizontally */
+        width: 170px;
+        border-radius: 3%;
+        transform: translateX(-50%);
+        border-radius: 10%; 
+
+    }
+
+    .search-button-dfs{
+        position: fixed;
+        top: 10px; /* Adjust as needed to control the vertical position */
+        left: 320px; /* Center horizontally */
+        width: 170px;
+        border-radius: 3%;
+        transform: translateX(-50%); 
+        border-radius: 10%;
+    }
+
+    .search-button-dfs.active {
+        background-color: #fbb13c;
+        color: white;
+    }
+      
+      /* Style for the non-active button */
+    .search-button-dfs:not(.active) {
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .search-button-bfs.active {
+        background-color: #fbb13c;
+        color: white;
+    }
+      
+      /* Style for the non-active button */
+      .search-button-bfs:not(.active) {
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+    }
+  
+    .stack-container {  
+        margin-left: 1125px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        padding: 10px;
+        width: 360px; 
+        position: relative;
+        display: none;
+        }
+    
+    .queue-container{
+        margin-left: 1125px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        padding: 10px;
+        width: 360px; 
+        position: relative;
+        display: none;
+  
+    }
+
+    .queue-node{
+        width: 35px;
+        height: 35px;
+        background-color:rgb(69, 199, 211);
+        border: 1px solid rgb(69, 199, 211);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        border-radius: 10%;
+               
+    }
+          
+    .stack-node {
+        width: 35px;
+        height: 35px;
+        background-color:rgb(69, 199, 211);
+        border: 1px solid rgb(69, 199, 211);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        border-radius: 10%;
+            
+        }
+    
+    .stack-container .stack-node {
+        margin-left: 150px;
+            
+        }
+
+    .queue-container .queue-node {
+    
+        margin-left: 150px; 
+            
+          }
+  
+      #dfs-buttons{
+        margin-top: 10px;
+        margin-left: 1125px; 
+        display: none;       
+          }
+
+      #bfs-buttons {
+        display: none;
+        margin-top: 10px;
+        margin-left: 1125px;
+        }
+  
+      #graph-svg {
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        left: 5px; /* Adjust the left position as needed */
+          }
+  
+      .highlighted-node {
+        fill: #fbb13c; /* Change the fill color to highlight the node */
+        stroke: #000; /* Add a border to make it stand out */
+        stroke-width: 2px;
+        }
+  
+      .highlighted-edge {
+        stroke: rgb(25, 28, 16); /* Change the stroke color to highlight the edge */
+        stroke-width: 3px; /* Increase the stroke width for emphasis */
+          }
+  
+      .incorrect-message {
+        color: #fbb13c;
+      }
+  
+  /* Style for "correct" message */
+      .correct-message {
+          color: rgb(65, 174, 187);
+      }
+  
+      #correctness-message{
+          font-size: 40px;
+          position: absolute;
+          bottom: 8px; /* Adjust as needed to control the vertical position */
+          left: 30%; /* Center horizontally */
+          transform: translateX(-50%);
+      }
+  
+
