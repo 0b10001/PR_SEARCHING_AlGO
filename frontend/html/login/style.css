@@ -6,10 +6,11 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Quicksand', sans-serif;
 }
 body{
-  background: #dfe9f5;
+  background-color: #181818;
   font-family: verdana, geneva, sans-serif;
 }
 .container{
@@ -21,7 +22,7 @@ nav{
   bottom: 0;
   height: 100vh;
   left: 0;
-  background: #fff;
+  background: ;
   width: 280px;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
@@ -76,10 +77,14 @@ a:hover{
   position: relative;
   padding: 20px;
   width: 100%;
+  
+  
 }
 .main-top{
   display: flex;
   width: 100%;
+  justify-content: center;
+  color: #0f0;
 }
 .main-top i{
   position: absolute;
@@ -91,15 +96,18 @@ a:hover{
 .main-skills{
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 }
 .main-skills .card{
   width: 25%;
   margin: 10px;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #222;
   text-align: center;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 .main-skills .card h3{
   margin: 10px;
@@ -109,8 +117,8 @@ a:hover{
   font-size: 12px;
 }
 .main-skills .card button{
-  background: orangered;
-  color: #fff;
+  background: #0f0;
+  color: black;
   padding: 7px 15px;
   border-radius: 10px;
   margin-top: 15px;
