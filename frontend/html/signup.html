@@ -26,36 +26,36 @@
 
       <div class="inputBox"> 
 
-       <input type="text" required> <i>Username</i> 
+       <input class="js-username-input"  type="text" required> <i>Username</i> 
 
       </div> 
 
       <div class="inputBox"> 
 
-       <input type="text" required> <i>name</i> 
+       <input class="js-name-input"  type="text" required> <i>name</i> 
 
       </div> 
         
       <div class="inputBox"> 
 
-       <input type="text" required> <i>surname</i> 
+       <input class="js-surname-input"  type="text" required> <i>surname</i> 
 
       </div> 
 
       <div class="inputBox"> 
 
-       <input type="text" required> <i>email</i> 
+       <input class="js-email-input"  type="text" required> <i>email</i> 
 
       </div>
 
       <div class="inputBox"> 
 
-       <input type="password" required> <i>Password</i> 
+       <input class="js-password-input"  type="password" required> <i>Password</i> 
 
       </div> 
       <div class="inputBox"> 
 
-       <input type="password" required> <i> Confirm Password</i> 
+       <input class="js-password-confirmation-input"  type="password" required> <i> Confirm Password</i> 
 
       </div> 
 
@@ -63,7 +63,9 @@
 
       </div> 
 
-      <div class="inputBox"> 
+      <div onclick="
+        signup();
+      " class="inputBox"> 
 
        <input type="submit" value="Enter"> 
 
@@ -76,6 +78,10 @@
    </div> 
 
   </section> <!-- partial --> 
+
+  <script src="../scripts/signup.js">
+
+  </script>
 
  </body>
 
