@@ -30,11 +30,11 @@ module.exports = mongoose.model('student', studentSchema)
 
 // {
 //   "_id": "654b2c6237105c8d927e77b2",
-//   "username": "tebohomolise",
-//   "name": "Teboho",
-//   "surname": "Molise",
-//   "email": "tebohomolise32@gmail.com",
-//   "password": "tebomolise12345",
+  // "username": "tebohomolise",
+  // "name": "Teboho",
+  // "surname": "Molise",
+  // "email": "tebohomolise32@gmail.com",
+  // "password": "tebomolise12345",
 //   "createdAt": "2023-11-08T06:36:18.524Z",
 //   "updatedAt": "2023-11-08T06:37:44.825Z",
 //   "__v": 0
