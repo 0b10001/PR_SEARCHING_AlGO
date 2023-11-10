@@ -180,7 +180,7 @@ function generateNewGraph(){
     }
 
     const treeEdges = generateTreeEdges(numNodes);
-    console.log(treeEdges);
+  
     treeEdges.forEach((edge) => {
         dataset.push(edge);
     });
@@ -192,12 +192,12 @@ function generateNewGraph(){
 
     /* This part of the code changes nodes to represent child and parent*/
 
-    console.log(dataInletters)
+  
 
     // Reverse the order of elements in each sub-array using map
     const  reversedData = dataInletters.map(item => [item[1], item[0]]);
 
-    console.log(reversedData )
+    
         
     var links = [];
     // Split each line by comma
@@ -215,7 +215,7 @@ function generateNewGraph(){
         links.push(obj);
     }  
 
-    console.log(links)
+    
 
         
         var nodes={}
@@ -291,7 +291,7 @@ function tick(e){
         }     
 
 function markInput() {
-        console.log(result)
+        
         var inputElement = document.querySelector(".input-box");
         var inputValue = inputElement.value;
 
