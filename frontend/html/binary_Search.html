@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="binary_Search_Styles.css">
+    <title>Binary Search</title>
+    
+</head>
+<body>
+  
+    <p class="topic">Binary Search</p>
+    <div id="question-container">
+        <span>Search Element:</span> <span id="x-placeholder"></span>
+        
+        <div class="radio-option">
+            <input type="radio" id="large-list" name="list-size" value="large" onclick="generateRandomArray()" checked>    Large<br>
+            <input type="radio" id="small-list" name="list-size" value="small" onclick="generateRandomArray()">    Small<br>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <div id="array-container">
+        <!-- Boxes with indices will be added here -->
+    </div>
+    
+    <div class="input-container">
+        <label for="low">Low </label>
+        <input type="number" id="low"   class="input-box1" >
+        <label for="mid">Mid </label>
+        <input type="number" id="mid"   class="input-box2" >
+        <label for="high">High </label>
+        <input type="number" id="high"  class="input-box3" >
+        <button id="search-button">Search</button>
+    </div>
+    <div id="empty-boxes">
+        
+    </div>
+    
+    
+    <button id="check-button">Check</button>
+    
+    <p id="result"></p>
+
+
+  <script src="binary_Search.js"></script> 
+</body>
+</html>
