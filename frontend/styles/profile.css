@@ -1,0 +1,23 @@
+body {
+    background-color: #181818;
+}
+.profile {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #222;
+    border: 1px solid #dee2e6;
+    border-color: #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+.profile h2 {
+    margin-top: 0;
+    color: #343a40;
+}
+.profile p {
+    margin: 0 0 10px;
+    color: #6c757d;
+}

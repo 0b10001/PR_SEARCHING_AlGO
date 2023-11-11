@@ -77,6 +77,7 @@
 // }
 
 function getUsername() {
+
   const inputUsername = document.querySelector(".js-username-input");
   const inputPassword = document.querySelector(".js-password-input");
 
@@ -112,6 +113,9 @@ async function fetchData(username, password) {
     });
 
     if (foundUser) {
+      // Set a cookie
+      document.cookie = `username=${foundUser.username}`;
+
       // Update the URL without triggering a page reload
       history.pushState({}, "", "../html/dashboard.html");
 
