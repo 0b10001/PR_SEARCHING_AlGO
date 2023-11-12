@@ -95,12 +95,15 @@ a:hover{
   cursor: pointer;
 }
 .main-skills{
-  display: flex;
+  /* display: flex; */
   margin-top: 20px;
-  justify-content: center;
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 .main-skills .card{
-  width: 25%;
+  /* width: 25%; */
   margin: 10px;
   /* background: #fff; */
   background-color: #222;
