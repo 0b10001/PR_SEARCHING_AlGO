@@ -12,4 +12,4 @@
 
 2. Change 'Dashboard' to 'Welcome 'name''
 
-3. Add at least 6 more practice problems and at leat 3 subproblems
+3. Add at least 6 more practice problems and at least 3 subproblems
