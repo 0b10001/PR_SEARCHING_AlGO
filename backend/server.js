@@ -29,12 +29,12 @@ app.use("/api/students", studentRoutes);
 
 // connect to db
 mongoose
-  .connect('mongodb+srv://tebohomolise32:Bw3xzdRmX7xK7bwP@cluster0.r4hmt72.mongodb.net/')
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("connected to database");
     // listen to port
-    app.listen(4000, () => {
-      console.log("listening for requests on port", 4000);
+    app.listen(process.env.PORT, () => {
+      console.log("listening for requests on port", process.env.PORT);
     });
   })
   .catch((err) => {
