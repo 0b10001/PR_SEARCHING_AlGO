@@ -2,6 +2,8 @@
 
 ## How to run it
 
+0. In the 'backend' directory type 'npm install'
+
 1. Run the 'server.js' file in the backend folder using 'node server.js'
 
 2. On the frontend folder, go to the html subfolder and open the 'login.html' on your browser or using vs code extension like live server
