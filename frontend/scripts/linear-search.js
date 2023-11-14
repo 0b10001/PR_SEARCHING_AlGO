@@ -164,20 +164,30 @@ function checkAnswer() {
   console.log(`incorrect: ${incorrectQuestions}`);
 
   // Call the function
-  updateStudentName(getCookie("_id"), correctQuestions, incorrectQuestions)
+  incrementLSCorrect(getCookie("_id"), correctQuestions, incorrectQuestions)
     .then((data) => console.log(data))
     .catch((error) => console.log("There was an error!", error));
 }
 
-async function updateStudentName(id, LSCORRECT, LSINCORRECT) {
+async function getStudent(id) {
+  const response = await fetch(`http://localhost:4000/api/students/${id}`);
+  const student = await response.json();
+  return student;
+}
+
+async function incrementLSCorrect(id, LSCORRECT, LSINCORRECT) {
+  const student = await getStudent(id);
+  const LSCORRECTNEW = student.LSCORRECT + LSCORRECT;
+  const LSINCORRECTNEW = student.LSINCORRECT + LSINCORRECT;
+
   const response = await fetch(`http://localhost:4000/api/students/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-        LSCORRECT: LSCORRECT,
-        LSINCORRECT: LSINCORRECT
+      LSCORRECT: LSCORRECTNEW,
+      LSINCORRECT: LSINCORRECTNEW,
     }),
   });
   if (!response.ok) {
