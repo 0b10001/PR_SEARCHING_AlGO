@@ -1,0 +1,51 @@
+body {
+    background-color: #000;
+}
+
+.title, .container, .outcome, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button {
+    margin-top: 30px;
+    display: flex;
+    color: #0f0;
+    font-size: 50px;
+    justify-content: center;
+}
+.subcontainer, .correct, .incorrect, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button{
+    font-size: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.question {
+    background-color: #000;
+}
+.nextQuestion {
+    background-color: #000;
+}
+.input-box {
+    background-color: #000;
+}
+.text-box, .enter {
+    padding: 10px;
+    font-size: 20px;
+    color: #0f0;
+    background-color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    border-color: #0f0;
+}
+.enter {
+    background-color: black;
+    
+}
+.enter-button, .next-question-button {
+    margin-top: -40px;
+    border: none;
+    padding: 9px;
+
+}
+.outcome {
+    margin-bottom: 60px;
+}

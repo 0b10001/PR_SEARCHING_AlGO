@@ -115,7 +115,7 @@ async function fetchData(username, password) {
     if (foundUser) {
       // Set a cookie
       document.cookie = `username=${foundUser.username}`;
-
+      document.cookie = `_id=${foundUser._id}`;
       // Update the URL without triggering a page reload
       history.pushState({}, "", "../html/dashboard.html");
 

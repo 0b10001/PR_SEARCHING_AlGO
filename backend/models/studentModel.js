@@ -21,6 +21,12 @@ const studentSchema = new Schema(
     password: {
       type: String,
       required: true,
+    },
+    LSCORRECT: {
+      type: Number,
+    },
+    LSINCORRECT: {
+      type: Number,
     }
   },
   { timestamps: true }

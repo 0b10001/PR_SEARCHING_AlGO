@@ -27,7 +27,7 @@ const getStudent = async (req, res) => {
 
 // create a new student
 const createStudent = async (req, res) => {
-  const { username, name, surname, email, password } = req.body;
+  const { username, name, surname, email, password, LSCORRECT, LSINCORRECT } = req.body;
 
   // add to the database
   try {
@@ -36,7 +36,9 @@ const createStudent = async (req, res) => {
       name,
       surname,
       email,
-      password
+      password,
+      LSCORRECT,
+      LSINCORRECT
     });
     res.status(200).json(student);
   } catch (error) {
