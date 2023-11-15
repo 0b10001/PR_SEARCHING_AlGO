@@ -25,7 +25,9 @@ jobs:
       - run:
           name: Upload coverage reports to Codecov
           command: |
-            curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
+            curl -Os https://uploader.codecov.io/latest/linux/codecov
+            chmod +x codecov
+            ./codecov
 
 workflows:
   version: 2
