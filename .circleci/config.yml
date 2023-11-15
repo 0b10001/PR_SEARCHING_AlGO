@@ -23,7 +23,7 @@ jobs:
       - image: circleci/node:14
     steps:
       - name: Checkout code
-        checkout
+        run: checkout
       - name: Upload coverage reports to Codecov
         run: |
           curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
