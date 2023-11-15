@@ -1,24 +1,18 @@
 version: 2.1
-
+orbs:
+  node: circleci/node@4.1.0
 workflows:
-  test-deploy:
+  build_test_and_deploy:
     jobs:
-      - test
-
-jobs:
-  test:
-    docker:
-      - image: cimg/node:21.1.0
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies and run tests in backend directory
-          command: |
-            cd /home/circleci/project/backend/
-            npm install
-            npm run test
-      - run:
-          name: Run Jest tests
-          command: |
-            npm install --save-dev jest
-            npm test
+      - node/test:
+          version: 14.17.3
+      - node/build:
+          version: 14.17.3
+          requires:
+            - node/test
+      - node/deploy:
+          requires:
+            - node/build
+          filters:
+            branches:
+              only: main
