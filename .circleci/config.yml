@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  codecov: codecov/codecov@3.2.4
+
 jobs:
   build:
     docker:
@@ -14,6 +17,16 @@ jobs:
       # Run tests
       - run: npm test
 
+  upload-coverage:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+      - run:
+          name: Upload coverage reports to Codecov
+          command: |
+            curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
+
 workflows:
   version: 2
   test:
@@ -23,6 +36,10 @@ workflows:
             branches:
               only:
                 - main
-
-orbs:
-  codecov: codecov/codecov@3.2.4
+      - upload-coverage:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main
