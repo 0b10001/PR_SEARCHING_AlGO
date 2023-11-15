@@ -22,11 +22,11 @@ jobs:
     docker:
       - image: circleci/node:14
     steps:
-      - name: Checkout code
-        run: checkout
-      - name: Upload coverage reports to Codecov
-        run: |
-          curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
+      - checkout
+      - run:
+          name: Upload coverage reports to Codecov
+          command: |
+            curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
 
 workflows:
   version: 2
