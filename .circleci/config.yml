@@ -17,3 +17,8 @@ jobs:
             cd /home/circleci/project/backend/
             npm install
             npm run test
+      - run:
+          name: Run Jest tests
+          command: |
+            npm install --save-dev jest
+            npm test
