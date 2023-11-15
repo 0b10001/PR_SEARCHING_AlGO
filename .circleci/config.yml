@@ -12,6 +12,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Change to project directory
+          command: cd /home/circleci/project/backend/package.json.
+      - run:
           name: Install dependencies
           command: npm install
       - run:
