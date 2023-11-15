@@ -1,34 +1,28 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@4.7
-  codecov: codecov/codecov@1.1.0
-
 jobs:
   build:
     docker:
-      - image: circleci/node:16.10
+      - image: circleci/node:14
+
     steps:
       - checkout
-      - run:
-          name: Install dependencies
-          command: yarn install
-      - run:
-          name: Run tests
-          command: yarn test --coverage
-      - run:
-          name: Upload coverage report
-          command: |
-            curl -Os https://uploader.codecov.io/latest/linux/codecov
-            chmod +x codecov
-            ./codecov
+
+      # Install dependencies
+      - run: npm install
+
+      # Run tests
+      - run: npm test
 
 workflows:
-  sample:
+  version: 2
+  test:
     jobs:
-      - node/test:
-          version: '16.10'
-          pkg-manager: yarn
       - build:
-          requires:
-            - node/test
+          filters:
+            branches:
+              only:
+                - main
+
+orbs:
+  codecov: codecov/codecov@3.2.4
