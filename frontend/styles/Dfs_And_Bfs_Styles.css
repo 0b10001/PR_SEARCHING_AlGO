@@ -38,9 +38,8 @@ html {
       left: 8%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 198px;
-      margin-left: 50px;
+      margin-left: 1100px;
       display: none;   
-      
     }
   
     .mark {
@@ -49,12 +48,14 @@ html {
       left: 22%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       display: none;   
+      margin-left: 1000px;
     }
     #container {
         padding: 5px;
         background: rgb(249, 249, 249);;
         text-align: left; /* this overrides the text-align: center on the body element. */
         border-bottom: 1px solid #011215; 
+        
         
       }
   

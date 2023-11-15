@@ -134,10 +134,13 @@ function updateSearchButtons() {
 
 
 
-var svg = d3.select('body').append('svg')
-            .attr('width', width)
-            .attr('height', height)
-            .attr("id", "graph-svg")
+var svg = d3
+  .select("body")
+  .append("svg")
+  .attr("width", width)
+  .attr("height", height)
+  .attr("id", "graph-svg")
+  .attr("transform", "scale(" + 0.8 + ") ");
             
 
 var result;
