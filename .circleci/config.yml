@@ -12,6 +12,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Change to project directory
+          command: cd backend
+      - run:
           name: Install dependencies
           command: npm install
       - run:
