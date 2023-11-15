@@ -14,11 +14,32 @@ jobs:
       # Run tests
       - run: npm test
 
+      # Upload code coverage to Codecov
+      - codecov/codecov:
+          file: './coverage/lcov-report/*.xml'
+
+  upload-coverage:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - name: Checkout code
+        checkout
+      - name: Upload coverage reports to Codecov
+        run: |
+          curl -s https://codecov.io/bash | bash -s -- -t $CODECOV_TOKEN
+
 workflows:
   version: 2
   test:
     jobs:
       - build:
+          filters:
+            branches:
+              only:
+                - main
+      - upload-coverage:
+          requires:
+            - build
           filters:
             branches:
               only:
