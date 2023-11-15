@@ -12,14 +12,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Change to project directory
-          command: cd /home/circleci/project/backend/
-      - run:
-          name: List files in project directory
-          command: ls /home/circleci/project/
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Run tests
-          command: npm run test
+          name: Install dependencies and run tests in backend directory
+          command: |
+            cd /home/circleci/project/backend/
+            npm install
+            npm run test
