@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run:
           name: Change to project directory
-          command: cd backend
+          command: cd /home/backend
       - run:
           name: Install dependencies
           command: npm install
