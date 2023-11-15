@@ -14,6 +14,10 @@ jobs:
       # Run tests
       - run: npm test
 
+      # Upload code coverage to Codecov
+      - codecov/codecov:
+          file: './coverage/lcov-report/*.xml'
+
 workflows:
   version: 2
   test:
@@ -23,3 +27,6 @@ workflows:
             branches:
               only:
                 - main
+
+orbs:
+  codecov/codecov@3.2.4
