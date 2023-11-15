@@ -17,10 +17,6 @@ jobs:
       # Run tests
       - run: npm test
 
-      # Upload code coverage to Codecov
-      - codecov/codecov:
-          file: './coverage/lcov-report/coverage.xml'  # Corrected line
-
   upload-coverage:
     docker:
       - image: circleci/node:14
