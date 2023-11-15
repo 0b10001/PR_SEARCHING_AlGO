@@ -15,6 +15,9 @@ jobs:
           name: Change to project directory
           command: cd /home/circleci/project/backend/
       - run:
+          name: List files in project directory
+          command: ls /home/circleci/project/
+      - run:
           name: Install dependencies
           command: npm install
       - run:
