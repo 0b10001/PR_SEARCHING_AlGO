@@ -56,7 +56,7 @@ async function fetchData(username) {
   if (foundUser) {
     // Set a cookie
     document.querySelector(".nav-item").innerHTML = `
-    <p style="color: #0f0">Hello<p> <p>${foundUser.name}</p>
+    <p style="color: #45c7d3">Hello<p> <p>${foundUser.name}</p>
                 `;
   } else {
     console.log("USERNAME NOT FOUND");

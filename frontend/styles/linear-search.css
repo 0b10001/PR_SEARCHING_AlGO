@@ -1,43 +1,70 @@
+html{
+    filter: brightness(0.95);
+}
+
 body {
-    background-color: #000;
+    background-color: #f0f0f0;
 }
 
 .title, .container, .outcome, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button {
     margin-top: 30px;
     display: flex;
-    color: #0f0;
+    color: #333;
     font-size: 50px;
     justify-content: center;
 }
 .subcontainer, .correct, .incorrect, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button{
-    font-size: 30px;
-    background-color: #333;
+    font-size: 20px;
+    background-color: rgb(69, 199, 211);
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
     cursor: pointer;
 }
-.question {
-    background-color: #000;
+.subcontainer{
+    background-color: #f0f0f0; 
+    color: #000;
+    border: 1px solid black
 }
+.incorrect{
+    background-color: #f0f0f0;
+}
+.correct{
+    background-color: #f0f0f0;  
+}
+.title{
+    border-bottom: 1px solid #b1cbd0 ;
+    color: #333;
+}
+.question {
+    color: #333;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #b1cbd0;
+}
+
 .nextQuestion {
-    background-color: #000;
+    background-color: #f0f0f0;
 }
 .input-box {
-    background-color: #000;
+    background-color:#f0f0f0;
+   
 }
 .text-box, .enter {
     padding: 10px;
     font-size: 20px;
-    color: #0f0;
-    background-color: #333;
+    color: black;
+    background-color:#f0f0f0 ;
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    border-color: #0f0;
+    
+    
+}
+.text-box{
+    border: 1px solid black;
 }
 .enter {
-    background-color: black;
+    background-color: #f0f0f0;
     
 }
 .enter-button, .next-question-button {
