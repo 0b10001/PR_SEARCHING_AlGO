@@ -1,5 +1,9 @@
 body {
-    background-color: #000;
+    background-color: #181818;
+    font-family: 'Quicksand', sans-serif;
+}
+.title {
+    font-weight: bold;
 }
 
 .title, .container, .outcome, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button {
@@ -18,13 +22,14 @@ body {
     cursor: pointer;
 }
 .question {
-    background-color: #000;
+    background-color: #181818;
+    font-weight: bold;
 }
 .nextQuestion {
-    background-color: #000;
+    background-color: #181818;
 }
 .input-box {
-    background-color: #000;
+    background-color: #181818;
 }
 .text-box, .enter {
     padding: 10px;
@@ -37,7 +42,7 @@ body {
     border-color: #0f0;
 }
 .enter {
-    background-color: black;
+    background-color: #181818;
     
 }
 .enter-button, .next-question-button {

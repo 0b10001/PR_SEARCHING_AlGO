@@ -4,10 +4,12 @@ html {
     body{
       margin:0;
       padding: 0;
+      background-color: #181818;
     }
     
     .node{
-      fill:rgb(69, 199, 211);
+      /* fill:rgb(69, 199, 211); */
+      fill: #0f0;
       stroke:#fff;
       stroke-width: 2px;
     }
@@ -15,6 +17,9 @@ html {
     .link{
       stroke:#777;
       stroke-width: 2px;
+    }
+    p {
+      color: #0f0;
     }
   
     .font {
@@ -39,7 +44,9 @@ html {
       transform: translateX(-50%); /* Center horizontally */
       width: 198px;
       margin-left: 1100px;
-      display: none;   
+      display: none;  
+      top: 10px; 
+      left: 0px;
     }
   
     .mark {
@@ -49,10 +56,13 @@ html {
       transform: translateX(-50%); /* Center horizontally */
       display: none;   
       margin-left: 1000px;
+      top: 10px; 
+      left: 245px;
     }
     #container {
         padding: 5px;
-        background: rgb(249, 249, 249);;
+        /* background: rgb(249, 249, 249); */
+        background-color: #181818;
         text-align: left; /* this overrides the text-align: center on the body element. */
         border-bottom: 1px solid #011215; 
         
@@ -100,7 +110,7 @@ html {
     }
 
     .search-button-dfs.active {
-        background-color: #fbb13c;
+        background-color: #0f0;
         color: white;
     }
       
@@ -208,7 +218,7 @@ html {
           }
   
       .highlighted-node {
-        fill: #fbb13c; /* Change the fill color to highlight the node */
+        fill: #45c7d3; /* Change the fill color to highlight the node */
         stroke: #000; /* Add a border to make it stand out */
         stroke-width: 2px;
         }
@@ -219,12 +229,18 @@ html {
           }
   
       .incorrect-message {
-        color: #fbb13c;
+        display: flex;
+        /* color: #fbb13c; */
+        color: red;
+        top: 100px;
+        margin-right: -10px;
       }
   
   /* Style for "correct" message */
       .correct-message {
-          color: rgb(65, 174, 187);
+          /* color: rgb(65, 174, 187); */
+          color: #0f0;
+
       }
   
       #correctness-message{

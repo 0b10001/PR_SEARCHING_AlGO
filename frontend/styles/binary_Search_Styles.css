@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: #181818;
     margin: 0;
     padding: 0;
 }
@@ -12,8 +13,7 @@ body {
 
 .topic{
     color: #0b0b0b;
-    font-size:30px ;
-    
+    font-size:50px ;
     border-bottom: 1px solid #e1ebed;
     padding-bottom: 0px;
     
@@ -27,7 +27,7 @@ body {
     
     border: 1px solid #2fcade;
     padding: 20px;
-    color: black;
+    color: #0f0;
     margin: 20px 0;
 }
 #question-container{
@@ -35,7 +35,7 @@ body {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 30px;
-    color:black;
+    color:#0f0;
     border-bottom: 1px solid #dee8ea;
     
 }
@@ -113,8 +113,8 @@ button:hover {
 }
 
 .number-box {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #000;
     line-height: 40px;
     font-weight: bold;

@@ -132,7 +132,7 @@ function checkAnswer() {
   const outcomeElement = document.querySelector(".outcome");
   if (!answerValue) {
     outcomeElement.innerHTML = `
-      <div class="correct">
+      <div style="color: red; font-weight: bold" class="correct">
         Please enter an index number
       </div>
     `;
@@ -145,7 +145,7 @@ function checkAnswer() {
       shoudCount = false;
     }
     outcomeElement.innerHTML = `
-      <div class="correct">
+      <div style="font-weight: bold" class="correct">
         Correct
       </div>
     `;
@@ -155,7 +155,7 @@ function checkAnswer() {
       shoudCount = false;
     }
     outcomeElement.innerHTML = `
-      <div class="incorrect">
+      <div style="color: red; font-weight: bold" class="incorrect">
         Incorrect
       </div>
     `;
