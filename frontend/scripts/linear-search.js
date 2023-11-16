@@ -52,7 +52,7 @@ let questionNumber = getRandomNumber();
 let questionNumber5 = getRandomNumber5();
 
 const questionElement = document.querySelector(".question");
-questionElement.innerHTML = `What is the index number of ${randomNumbersList[questionNumber5]} ?`;
+questionElement.innerHTML = `What value has the index number of ${randomNumbersList[questionNumber5]} ?`;
 
 const element = document.querySelector(".container");
 element.innerHTML = `
@@ -84,7 +84,7 @@ function nextQuestion() {
   //   console.log(randomNumbersList);
 
   const questionElement = document.querySelector(".question");
-  questionElement.innerHTML = `What is the index number of ${randomNumbersList[questionNumber]} ?`;
+  questionElement.innerHTML = `What value has the index number of ${randomNumbersList[questionNumber]} ?`;
 
   const element = document.querySelector(".container");
   element.innerHTML = `
