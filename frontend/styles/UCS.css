@@ -4,15 +4,10 @@ html {
     body{
       margin:0;
       padding: 0;
-      background-color: #181818;
-    }
-
-    p {
-      color: #0f0;
     }
     
     .node{
-      fill:#0f0;
+      fill:rgb(69, 199, 211);
       stroke:#fff;
       stroke-width: 2px;
     }
@@ -57,9 +52,9 @@ html {
     }
     #container {
         padding: 5px;
-        background: #181818;
+        background: rgb(249, 249, 249);;
         text-align: left; /* this overrides the text-align: center on the body element. */
-        border-bottom: 1px solid #181818; 
+        border-bottom: 1px solid #011215; 
         
       }
   
