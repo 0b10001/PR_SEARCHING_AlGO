@@ -52,7 +52,7 @@ let questionNumber = getRandomNumber();
 let questionNumber5 = getRandomNumber5();
 
 const questionElement = document.querySelector(".question");
-questionElement.innerHTML = `What is the index number of ${randomNumbersList[questionNumber5]} ?`;
+questionElement.innerHTML = `What is the index of the number ${randomNumbersList[questionNumber5]} ?`;
 
 const element = document.querySelector(".container");
 element.innerHTML = `
@@ -84,7 +84,7 @@ function nextQuestion() {
   //   console.log(randomNumbersList);
 
   const questionElement = document.querySelector(".question");
-  questionElement.innerHTML = `What is the index number of ${randomNumbersList[questionNumber]} ?`;
+  questionElement.innerHTML = `What is the index of the number ${randomNumbersList[questionNumber]} ?`;
 
   const element = document.querySelector(".container");
   element.innerHTML = `
@@ -132,7 +132,7 @@ function checkAnswer() {
   const outcomeElement = document.querySelector(".outcome");
   if (!answerValue) {
     outcomeElement.innerHTML = `
-      <div class="correct">
+      <div style="color: red; font-weight: bold" class="correct">
         Please enter an index number
       </div>
     `;
@@ -145,7 +145,7 @@ function checkAnswer() {
       shoudCount = false;
     }
     outcomeElement.innerHTML = `
-      <div class="correct">
+      <div style="font-weight: bold" class="correct">
         Correct
       </div>
     `;
@@ -155,7 +155,7 @@ function checkAnswer() {
       shoudCount = false;
     }
     outcomeElement.innerHTML = `
-      <div class="incorrect">
+      <div style="color: red; font-weight: bold" class="incorrect">
         Incorrect
       </div>
     `;

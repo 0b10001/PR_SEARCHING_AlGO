@@ -13,6 +13,9 @@ body{
   background-color: #181818;
   font-family: verdana, geneva, sans-serif;
 }
+body:hover {
+  background-color: rgb(45, 70, 45);
+}
 .container{
   display: flex;
 }
@@ -66,7 +69,12 @@ nav .fas{
   margin-left: 10px;
 }
 a:hover{
+<<<<<<< HEAD
   background: rgb(69, 199, 211);
+=======
+  /* background: #eee; */
+  background-color: #0f0;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
 }
 .logout{
   position: absolute;
@@ -112,6 +120,9 @@ a:hover{
   padding: 10px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
   color: white;
+}
+.card:hover {
+    background-color: rgb(2, 2, 2);
 }
 .main-skills .card h3{
   margin: 10px;
