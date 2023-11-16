@@ -69,8 +69,12 @@ nav .fas{
   margin-left: 10px;
 }
 a:hover{
+<<<<<<< HEAD
+  background: rgb(69, 199, 211);
+=======
   /* background: #eee; */
   background-color: #0f0;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
 }
 .logout{
   position: absolute;
@@ -89,7 +93,7 @@ a:hover{
   display: flex;
   width: 100%;
   justify-content: center;
-  color: #0f0;
+  color: rgb(69, 199, 211);;
 }
 .main-top i{
   position: absolute;
@@ -128,7 +132,7 @@ a:hover{
   font-size: 12px;
 }
 .main-skills .card button{
-  background: #0f0;
+  background: rgb(69, 199, 211);
   color: black;
   padding: 7px 15px;
   border-radius: 10px;
@@ -136,7 +140,7 @@ a:hover{
   cursor: pointer;
 }
 .main-skills .card button:hover{
-  background: rgba(223, 70, 15, 0.856);
+  background: #e39d10;
 }
 .main-skills .card i{
   font-size: 22px;

@@ -1,48 +1,95 @@
+html{
+    filter: brightness(0.95);
+}
+
 body {
+<<<<<<< HEAD
+    background-color: #f0f0f0;
+=======
     background-color: #181818;
     font-family: 'Quicksand', sans-serif;
 }
 .title {
     font-weight: bold;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
 }
 
 .title, .container, .outcome, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button {
     margin-top: 30px;
     display: flex;
-    color: #0f0;
+    color: #333;
     font-size: 50px;
     justify-content: center;
 }
 .subcontainer, .correct, .incorrect, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button{
-    font-size: 30px;
-    background-color: #333;
+    font-size: 20px;
+    background-color: rgb(69, 199, 211);
     border-radius: 10px;
     margin-right: 10px;
     padding: 20px;
     cursor: pointer;
 }
+<<<<<<< HEAD
+.subcontainer{
+    background-color: #f0f0f0; 
+    color: #000;
+    border: 1px solid black
+=======
 .question {
     background-color: #181818;
     font-weight: bold;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
 }
+.incorrect{
+    background-color: #f0f0f0;
+}
+.correct{
+    background-color: #f0f0f0;  
+}
+.title{
+    border-bottom: 1px solid #b1cbd0 ;
+    color: #333;
+}
+.question {
+    color: #333;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #b1cbd0;
+}
+
 .nextQuestion {
+<<<<<<< HEAD
+    background-color: #f0f0f0;
+}
+.input-box {
+    background-color:#f0f0f0;
+   
+=======
     background-color: #181818;
 }
 .input-box {
     background-color: #181818;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
 }
 .text-box, .enter {
     padding: 10px;
     font-size: 20px;
-    color: #0f0;
-    background-color: #333;
+    color: black;
+    background-color:#f0f0f0 ;
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    border-color: #0f0;
+    
+    
+}
+.text-box{
+    border: 1px solid black;
 }
 .enter {
+<<<<<<< HEAD
+    background-color: #f0f0f0;
+=======
     background-color: #181818;
+>>>>>>> c53767c0db727cd75e8d7e336f7d3f8fb451604f
     
 }
 

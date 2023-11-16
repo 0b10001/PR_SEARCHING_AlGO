@@ -1,6 +1,7 @@
-html {
-    margin: 0;
-    }
+html{
+  
+  margin:0;
+}
     body{
       margin:0;
       padding: 0;
@@ -25,16 +26,17 @@ html {
     
     .next {
       position: absolute;
-      bottom:  3px; /* Adjust as needed to control the vertical position */
+      bottom:  3px; 
       left: 95%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 98px;
+      background-color: rgb(69, 199, 211);
       border-radius: 10%;
     }
   
     .input-box {
       position: absolute;
-      top: 65px; /* Adjust as needed to control the vertical position */
+      top: 10px; 
       right: 2%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 198px;
@@ -45,10 +47,11 @@ html {
   
     .mark {
       position: absolute;
-      top: 65px; /* Adjust as needed to control the vertical position */
+      top: 10px; 
       right: -1%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
-  
+      background-color: rgb(69, 199, 211);
+      border-radius: 10%;
     }
     #container {
         padding: 5px;
@@ -61,7 +64,7 @@ html {
     .numNodes{
          
         position: fixed;
-        top: 9px; /* Adjust as needed to control the vertical position */
+        top: 9px; 
         left: 620px; /* Center horizontally */
         width: 170px;
         border-radius: 8%;
@@ -70,19 +73,23 @@ html {
 
     .nodesPrompt{
       position: fixed;
-      top: 10px; /* Adjust as needed to control the vertical position */
-      left: 500px; /* Center horizontally */
+      top: 10px; 
+      left: 500px;
       width: 170px;
       border-radius: 3%;
       transform: translateX(-50%);
+    }
+
+    #cost{
+      background: rgb(69, 199, 211);
     }
     
   
   
       #graph-svg {
         position: absolute;
-        top: 60px; /* Adjust the top position as needed */
-        left: 5px; /* Adjust the left position as needed */
+        top: 60px; 
+        left: 5px; 
           }
   
       .highlighted-node {
@@ -108,20 +115,26 @@ html {
       #correctness-message{
           font-size: 20px;
           position: absolute;
-          top: 75px; /* Adjust as needed to control the vertical position */
+          top: 23px; 
           right: 23%; /* Center horizontally */
           transform: translateX(-50%);
       }
 
       .visited-node {
-        fill: orange; /* Adjust the fill color as needed */
-        stroke: #fff; /* Adjust the stroke color as needed */
-        stroke-width: 2px; /* Adjust the stroke width as needed */
+        fill: orange; 
+        stroke: #fff; 
+        stroke-width: 2px; 
     }
     
     .visited-edge {
-        stroke: orange; /* Adjust the stroke color as needed */
-        stroke-width: 2px; /* Adjust the stroke width as needed */
+        stroke: orange; 
+        stroke-width: 2px; 
+    }
+
+    .visitedNodesDiv{
+      position: absolute;
+      top: 80px; 
+      right: 1%; 
     }
     
 
