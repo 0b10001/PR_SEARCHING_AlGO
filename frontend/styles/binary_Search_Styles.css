@@ -1,14 +1,8 @@
-html{
-    filter: brightness(0.95);
-}
-
 body {
-    
     font-family: Arial, sans-serif;
-    background-color:#f0f0f0;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    
 }
 
 .container{
@@ -18,7 +12,8 @@ body {
 
 .topic{
     color: #0b0b0b;
-    font-size:50px ;
+    font-size:30px ;
+    
     border-bottom: 1px solid #e1ebed;
     padding-bottom: 0px;
     
@@ -36,7 +31,7 @@ body {
     margin: 20px 0;
 }
 #question-container{
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 30px;
@@ -49,21 +44,21 @@ body {
 }
 #array {
     font-size: 30px; /* Increase font size */
-    color:#e39d10; /* Change text color to a desired color */
+    color:#e39d10; 
 }
 
 #next-button {
     position: absolute;
     margin: 20px;
     padding: 10px 20px;
-    color: #333;
+    color: #fff;
     background-color: rgb(16, 206, 227);
     border: none;
     cursor: pointer;
-    font-size: 30px;
-    border-radius: 20px; /* Adjust the border-radius to control the roundness */
+    font-size: 22px;
+    border-radius: 20px; 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    top: 100px; /* Adjust as needed to control the vertical position */
+    top: 50px; 
     left: 95%; /* Center horizontally */
     transform: translateX(-50%);
 }
@@ -78,10 +73,10 @@ body {
 #check-button{
     position: absolute;
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
     border: 1px solid rgb(8, 7, 8);
     border-radius: 10px;
-    top: 130px; /* Adjust as needed to control the vertical position */
+    top: 75px;
     left: 72%; /* Center horizontally */
     transform: translateX(-50%);
 }
@@ -90,17 +85,17 @@ body {
     color: rgb(8, 8, 8);
     position: absolute;
     font-size: 30px;
-    top: 113px; /* Adjust as needed to control the vertical position */
+    top: 70px; 
     left: 85%; /* Center horizontally */
     transform: translateX(-50%);
   }
 
-  /* Add these styles for incorrect result */
+  
 #result.incorrect {
     color: rgb(9, 10, 10);
     position: absolute;
-    font-size: 25px;
-    top: 113px; /* Adjust as needed to control the vertical position */
+    font-size: 20px;
+    top: 60px; 
     left: 85%; /* Center horizontally */
     transform: translateX(-50%);
   }
@@ -118,38 +113,42 @@ button:hover {
 }
 
 .number-box {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #000;
     line-height: 40px;
     font-weight: bold;
+    font-size: 13px;
     margin: 10px;
 }
 .empty-boxes {
     position: relative;
     top:40px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     border: 1px solid #335155;
     vertical-align: middle;
     text-align: center;
     line-height: 40px;
+    font-size: 13px;
     font-weight: bold;
     margin: 15px;
+    
 }
 .empty-boxes1 {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #090808;
     text-align: center;
     vertical-align: middle;
+
     margin: 5px;
-    position: relative; /* Add this line to set position to relative */
+    position: relative; 
 }
 .index {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 
@@ -157,7 +156,7 @@ button:hover {
     position: relative;
     display: flex;
     justify-content: baseline;
-    width: 50%; /* Adjust the width of the container as needed */
+    width: 50%; 
     margin: 0 auto; /* Center the container horizontally */
     top:10px;
     left:-20%;
@@ -165,34 +164,33 @@ button:hover {
 }
 
 .input-box1 {
-    width: 10%; /* Adjust the width of the input boxes as needed */
-    padding: 10px;
-    font-size: 25px;
-
+    width: 10%; 
+    padding: 5px;
+    font-size: 15px;
     border: 1px solid rgb(16, 206, 227);
     border-radius: 10px;
-    
+    text-align: center;
 }
 .input-box2 {
-    width: 10%; /* Adjust the width of the input boxes as needed */
-    padding: 10px;
-    font-size: 25px;
+    width: 10%; 
+    padding: 5px;
+    font-size: 15px;
     border: 1px solid #e39d10;
     border-radius: 10px;
-    
+    text-align: center;
 }
 .input-box3 {
-    width: 10%; /* Adjust the width of the input boxes as needed */
-    padding: 10px;
-    font-size: 25px;
+    width: 10%; 
+    padding: 5px;
+    font-size: 15px;
     border: 1px solid rgb(236, 12, 188);
     border-radius: 10px;
-    
+    text-align: center;
 }
 #search-button{
-    width: 20%; /* Adjust the width of the input boxes as needed */
+    width: 20%; 
     padding: 10px;
-    font-size: 25px;
+    font-size: 19px;
     color:rgb(16, 206, 227);
     border: 3px solid black;
     border-radius: 20px;
@@ -202,7 +200,7 @@ button:hover {
     color:rgb(82, 84, 85);
     font-style: italic;
   }
-  /* Add these styles to your CSS */
+  
  
 .highlight-low {
     width: 50px; /* Set the desired width and height */
@@ -213,7 +211,7 @@ button:hover {
 }
 
 .highlight-mid {
-    width: 50px; /* Set the desired width and height */
+    width: 50px; 
     height: 50px;
     border: 3px solid #e39d10; /* Set the border thickness and color */
     border-radius: 100%; /* Make it a circle by using 100% border-radius */
@@ -225,49 +223,30 @@ button:hover {
     height: 50px;
     border: 3px solid rgb(236, 12, 188); /* Set the border thickness and color */
     border-radius: 100%; /* Make it a circle by using 100% border-radius */
-    background: transparent
+    background: transparent;
+    
 }
 label {
     margin-left: 20px;
     margin-right: 5px;
     margin-top: 15px;
-    font-size: 1.3em; 
-    
-    font-style: italic;/* Adjust the margin to control the spacing between label and input */
+    font-style: italic;
 }
 
-.dropdown-button {
-    position: absolute;
-    top:33%;
-    font-size: xx-large;
-    left:80%;
-    background-color: #f1f1f1;
-    color:rgb(16, 206, 227);
-    padding: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 
-/* Style for the content that is initially hidden */
-.dropdown-content {
-    position: absolute; /* Use absolute positioning */
-    top: 450px; /* Adjust the top value to position it below the button */
-    left: 1830px; 
-    display: none;
-    padding: 10px;
-}
 .radio-option {
     
     display: inline-block;
     margin-bottom: 10px;
     margin-top: -30%; 
-    margin-left: 5%;/* You can adjust the margin to control the spacing between the options */
+    margin-left: 5%;
 }
 .radio-option label {
     margin-left:200px;
-    font-size: 25px; /* Adjust the font size as needed */
-    font-weight: normal; /* Make the text not bold */
+    font-weight: normal; 
 }
 .radio-option input[type="radio"] {
-    margin-right: 1px; /* Adjust the margin as needed */
+    margin-right: 1px; 
 }
+
+ 
