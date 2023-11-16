@@ -25,30 +25,33 @@ html {
     
     .next {
       position: absolute;
-      bottom: 3px; /* Adjust as needed to control the vertical position */
+      bottom: 3px; 
       left: 95%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 98px;
+      border-radius: 10%;  
       border-radius: 10%;
     }
   
     .input-box {
       position: absolute;
-      bottom: 3px; /* Adjust as needed to control the vertical position */
+      top: 10px; 
       left: 8%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 198px;
       margin-left: 1100px;
+      border-radius: 7%; 
       display: none;   
     }
   
     .mark {
       position: absolute;
-      bottom: 3px; /* Adjust as needed to control the vertical position */
-      left: 22%; /* Center horizontally */
+      top: 10px; 
+      left: 25%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       display: none;   
       margin-left: 1000px;
+      border-radius: 10%; 
     }
     #container {
         padding: 5px;
@@ -62,7 +65,7 @@ html {
     .numNodes{
          
         position: fixed;
-        top: 9px; /* Adjust as needed to control the vertical position */
+        top: 9px; 
         left: 620px; /* Center horizontally */
         width: 170px;
         border-radius: 8%;
@@ -71,7 +74,7 @@ html {
 
     .nodesPrompt{
       position: fixed;
-      top: 10px; /* Adjust as needed to control the vertical position */
+      top: 10px; 
       left: 500px; /* Center horizontally */
       width: 170px;
       border-radius: 3%;
@@ -80,7 +83,7 @@ html {
     
     .search-button-bfs{
         position: fixed;
-        top: 10px; /* Adjust as needed to control the vertical position */
+        top: 10px; 
         left: 200px; /* Center horizontally */
         width: 170px;
         border-radius: 3%;
@@ -91,7 +94,7 @@ html {
 
     .search-button-dfs{
         position: fixed;
-        top: 10px; /* Adjust as needed to control the vertical position */
+        top: 10px; 
         left: 320px; /* Center horizontally */
         width: 170px;
         border-radius: 3%;
@@ -106,7 +109,7 @@ html {
       
       /* Style for the non-active button */
     .search-button-dfs:not(.active) {
-        background-color: white;
+        background-color:rgb(69, 199, 211) ;
         color: #333;
         cursor: pointer;
     }
@@ -118,7 +121,7 @@ html {
       
       /* Style for the non-active button */
       .search-button-bfs:not(.active) {
-        background-color: white;
+        background-color:rgb(69, 199, 211) ;
         color: #333;
         cursor: pointer;
     }
@@ -190,31 +193,31 @@ html {
           }
   
       #dfs-buttons{
-        margin-top: 10px;
+        margin-top: 40px;
         margin-left: 1125px; 
         display: none;       
           }
 
       #bfs-buttons {
         display: none;
-        margin-top: 10px;
+        margin-top: 40px;
         margin-left: 1125px;
         }
   
       #graph-svg {
         position: absolute;
-        top: 60px; /* Adjust the top position as needed */
-        left: 5px; /* Adjust the left position as needed */
+        top: 60px; 
+        left: 5px; 
           }
   
       .highlighted-node {
-        fill: #fbb13c; /* Change the fill color to highlight the node */
-        stroke: #000; /* Add a border to make it stand out */
+        fill: #fbb13c; 
+        stroke: #000;
         stroke-width: 2px;
         }
   
       .highlighted-edge {
-        stroke: rgb(25, 28, 16); /* Change the stroke color to highlight the edge */
+        stroke: rgb(25, 28, 16); 
         stroke-width: 3px; /* Increase the stroke width for emphasis */
           }
   
@@ -230,8 +233,8 @@ html {
       #correctness-message{
           font-size: 40px;
           position: absolute;
-          bottom: 8px; /* Adjust as needed to control the vertical position */
-          left: 30%; /* Center horizontally */
+          top: 8px; 
+          left: 65%; /* Center horizontally */
           transform: translateX(-50%);
       }
   
