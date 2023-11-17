@@ -124,5 +124,10 @@ html {
         stroke: orange; 
         stroke-width: 2px; 
     }
+    .visitedNodesDiv{
+      position: absolute;
+      top: 80px; 
+      right: 1%; 
+    }
     
 
