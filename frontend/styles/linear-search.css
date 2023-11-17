@@ -9,7 +9,7 @@ body {
 .title, .container, .outcome, .question, .nextQuestion, .input-box, .enter, .enter-button, .next-question-button {
     margin-top: 30px;
     display: flex;
-    color: #0f0;
+    color: rgb(69,199,211);
     font-size: 50px;
     justify-content: center;
 }
@@ -34,12 +34,12 @@ body {
 .text-box, .enter {
     padding: 10px;
     font-size: 20px;
-    color: #0f0;
+    color:rgb(69,199,211) ;
     background-color: #333;
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    border-color: #0f0;
+    border-color: rgb(69,199,211);
 }
 .enter {
     background-color: #181818;
