@@ -280,9 +280,15 @@ function generateNewGraph(){
                 .attr('x', 10)
                 .attr('y', 4); 
 
+               svg.selectAll('.node')  //Colors the start node S
+                .filter(function (d) {
+                    return d.name === 'S';
+                })
+                .style('fill', 'red'); 
+
         
     
-function tick(e){  //always graph to animate
+function tick(e){  //causes graph to animate
             node.attr('cx',function(d){return d.x;})
                 .attr('cy', function(d){return d.y;})
                 .call(force.drag)
