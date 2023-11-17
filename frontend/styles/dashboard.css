@@ -13,9 +13,7 @@ body{
   background-color: #181818;
   font-family: verdana, geneva, sans-serif;
 }
-body:hover {
-  background-color: rgb(45, 70, 45);
-}
+
 .container{
   display: flex;
 }
@@ -70,7 +68,7 @@ nav .fas{
 }
 a:hover{
   /* background: #eee; */
-  background-color: #0f0;
+  background-color: rgb(69,199,211);
 }
 .logout{
   position: absolute;
@@ -89,7 +87,7 @@ a:hover{
   display: flex;
   width: 100%;
   justify-content: center;
-  color: #0f0;
+  color: rgb(69,199,211);
 }
 .main-top i{
   position: absolute;
@@ -128,7 +126,7 @@ a:hover{
   font-size: 12px;
 }
 .main-skills .card button{
-  background: #0f0;
+  background: rgb(69,199,211);
   color: black;
   padding: 7px 15px;
   border-radius: 10px;
@@ -136,7 +134,7 @@ a:hover{
   cursor: pointer;
 }
 .main-skills .card button:hover{
-  background: rgba(223, 70, 15, 0.856);
+  background: #e39d10;
 }
 .main-skills .card i{
   font-size: 22px;
