@@ -35,7 +35,7 @@ html {
   
     .input-box {
       position: absolute;
-      top: 65px; 
+      top: 10px; 
       right: 2%; /* Center horizontally */
       transform: translateX(-50%); /* Center horizontally */
       width: 198px;
