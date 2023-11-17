@@ -3,7 +3,7 @@ function getRandomNumber5() {
   var randomDecimal = Math.random();
 
   // Scale the random decimal to the range 0 to 5 (inclusive)
-  var randomNumber = Math.floor(randomDecimal * 5);
+  var randomNumber = Math.floor(randomDecimal * 6);
 
   return randomNumber;
 }
