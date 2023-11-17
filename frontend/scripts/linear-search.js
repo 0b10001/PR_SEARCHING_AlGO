@@ -215,3 +215,4 @@ function getCookie(_id) {
 
 console.log(getCookie('_id'));  // Replace 'username' with the name of your cookie
 
+module.exports = { getRandomNumber, getRandomNumber5, getRandomNumbersList };
